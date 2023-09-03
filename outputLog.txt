@@ -1,0 +1,1043 @@
+Loading Instructions in the Memory
+Instruction: 00100000000000010000000000000010 @ 0000000
+Instruction: 00100000000000100000000000000101 @ 0000001
+Instruction: 00000000001000100001100000100000 @ 0000010
+Instruction: 10101100001000110000000000000000 @ 0000011
+Instruction: 10001100001001000000000000000000 @ 0000100
+Loaded!
+Execution:
+
+Clock Cycle:           0
+PC: 00000000000000000000000000000000
+----------------------------------------
+Control Signals: 
+Current State:  0, Next State:  1
+Inst_data = 0
+MemRead = 1
+MemWrite = 0
+IRWrite = 1
+PCSrc = 11
+jumpAddr = 0
+PCWrite = 1
+----------------------------------------
+Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+rs: xxxxx
+rt: xxxxx
+rd: xxxxx
+jta: xxxxxxxxxxxxxxxxxxxxxxxxxx
+immediate: xxxxxxxxxxxxxxxx
+opcode: xxxxxx
+fnclass: xxxxxx
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000000000, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000000000000000000000100
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: xxxxx
+REG 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000000
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           1
+PC: 00000000000000000000000000000100
+----------------------------------------
+Control Signals: 
+Current State:  1, Next State:  7
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00100000000000010000000000000010
+rs: 00000
+rt: 00001
+rd: 00000
+jta: 00000000010000000000000010
+immediate: 0000000000000010
+opcode: 001000
+fnclass: 000010
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 11
+Operand 1: 00000000000000000000000000000100, Operand 2: 00000000000000000000000000001000
+ALU Output: 00000000000000000000000000001100
+----------------------------------------
+Register File
+Write-Back Data: 00100000000000010000000000000010
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00001
+REG 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000001
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           2
+PC: 00000000000000000000000000000100
+----------------------------------------
+Control Signals: 
+Current State:  7, Next State:  8
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00100000000000010000000000000010
+rs: 00000
+rt: 00001
+rd: 00000
+jta: 00000000010000000000000010
+immediate: 0000000000000010
+opcode: 001000
+fnclass: 000010
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = xx
+FnType = 10
+ALUSrcX = 1
+ALUSrcY = 10
+Operand 1: 00000000000000000000000000000000, Operand 2: 00000000000000000000000000000010
+ALU Output: 00000000000000000000000000000010
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00001
+REG 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000001
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           3
+PC: 00000000000000000000000000000100
+----------------------------------------
+Control Signals: 
+Current State:  8, Next State:  0
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00100000000000010000000000000010
+rs: 00000
+rt: 00001
+rd: 00000
+jta: 00000000010000000000000010
+immediate: 0000000000000010
+opcode: 001000
+fnclass: 000010
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 00
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000000100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000001000000000000000000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000010
+RegWrite = 1
+RegDst = 00
+RegInSrc = 1
+RegDstAddr: 00001
+REG 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000001
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           4
+PC: 00000000000000000000000000000100
+----------------------------------------
+Control Signals: 
+Current State:  0, Next State:  1
+Inst_data = 0
+MemRead = 1
+MemWrite = 0
+IRWrite = 1
+PCSrc = 11
+jumpAddr = 0
+PCWrite = 1
+----------------------------------------
+Instruction: 00100000000000010000000000000010
+rs: 00000
+rt: 00001
+rd: 00000
+jta: 00000000010000000000000010
+immediate: 0000000000000010
+opcode: 001000
+fnclass: 000010
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000000100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000000000000000000001000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00001
+REG 1: 00000000000000000000000000000010
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000001
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           5
+PC: 00000000000000000000000000001000
+----------------------------------------
+Control Signals: 
+Current State:  1, Next State:  7
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00100000000000100000000000000101
+rs: 00000
+rt: 00010
+rd: 00000
+jta: 00000000100000000000000101
+immediate: 0000000000000101
+opcode: 001000
+fnclass: 000101
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 11
+Operand 1: 00000000000000000000000000001000, Operand 2: 00000000000000000000000000010100
+ALU Output: 00000000000000000000000000011100
+----------------------------------------
+Register File
+Write-Back Data: 00100000000000100000000000000101
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000010
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           6
+PC: 00000000000000000000000000001000
+----------------------------------------
+Control Signals: 
+Current State:  7, Next State:  8
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00100000000000100000000000000101
+rs: 00000
+rt: 00010
+rd: 00000
+jta: 00000000100000000000000101
+immediate: 0000000000000101
+opcode: 001000
+fnclass: 000101
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = xx
+FnType = 10
+ALUSrcX = 1
+ALUSrcY = 10
+Operand 1: 00000000000000000000000000000000, Operand 2: 00000000000000000000000000000101
+ALU Output: 00000000000000000000000000000101
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000010
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           7
+PC: 00000000000000000000000000001000
+----------------------------------------
+Control Signals: 
+Current State:  8, Next State:  0
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00100000000000100000000000000101
+rs: 00000
+rt: 00010
+rd: 00000
+jta: 00000000100000000000000101
+immediate: 0000000000000101
+opcode: 001000
+fnclass: 000101
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 00
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000001000, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000001000000000000000000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000101
+RegWrite = 1
+RegDst = 00
+RegInSrc = 1
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000010
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           8
+PC: 00000000000000000000000000001000
+----------------------------------------
+Control Signals: 
+Current State:  0, Next State:  1
+Inst_data = 0
+MemRead = 1
+MemWrite = 0
+IRWrite = 1
+PCSrc = 11
+jumpAddr = 0
+PCWrite = 1
+----------------------------------------
+Instruction: 00100000000000100000000000000101
+rs: 00000
+rt: 00010
+rd: 00000
+jta: 00000000100000000000000101
+immediate: 0000000000000101
+opcode: 001000
+fnclass: 000101
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000001000, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000000000000000000001100
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000010
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:           9
+PC: 00000000000000000000000000001100
+----------------------------------------
+Control Signals: 
+Current State:  1, Next State:  7
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00000000001000100001100000100000
+rs: 00001
+rt: 00010
+rd: 00011
+jta: 00001000100001100000100000
+immediate: 0001100000100000
+opcode: 000000
+fnclass: 100000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 11
+Operand 1: 00000000000000000000000000001100, Operand 2: 00000000000000000110000010000000
+ALU Output: 00000000000000000110000010001100
+----------------------------------------
+Register File
+Write-Back Data: 00000000001000100001100000100000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000011
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:          10
+PC: 00000000000000000000000000001100
+----------------------------------------
+Control Signals: 
+Current State:  7, Next State:  8
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00000000001000100001100000100000
+rs: 00001
+rt: 00010
+rd: 00011
+jta: 00001000100001100000100000
+immediate: 0001100000100000
+opcode: 000000
+fnclass: 100000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = xx
+FnType = 10
+ALUSrcX = 1
+ALUSrcY = 01
+Operand 1: 00000000000000000000000000000010, Operand 2: 00000000000000000000000000000101
+ALU Output: 00000000000000000000000000000111
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000011
+Cache Data: 00000000000000000000000000000101
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:          11
+PC: 00000000000000000000000000001100
+----------------------------------------
+Control Signals: 
+Current State:  8, Next State:  0
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 00000000001000100001100000100000
+rs: 00001
+rt: 00010
+rd: 00011
+jta: 00001000100001100000100000
+immediate: 0001100000100000
+opcode: 000000
+fnclass: 100000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 00
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000001100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000001000000000000000000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000111
+RegWrite = 1
+RegDst = 01
+RegInSrc = 1
+RegDstAddr: 00011
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000011
+Cache Data: 00000000000000000000000000000101
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:          12
+PC: 00000000000000000000000000001100
+----------------------------------------
+Control Signals: 
+Current State:  0, Next State:  1
+Inst_data = 0
+MemRead = 1
+MemWrite = 0
+IRWrite = 1
+PCSrc = 11
+jumpAddr = 0
+PCWrite = 1
+----------------------------------------
+Instruction: 00000000001000100001100000100000
+rs: 00001
+rt: 00010
+rd: 00011
+jta: 00001000100001100000100000
+immediate: 0001100000100000
+opcode: 000000
+fnclass: 100000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000001100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000000000000000000010000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00010
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000011
+Cache Data: 00000000000000000000000000000101
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:          13
+PC: 00000000000000000000000000010000
+----------------------------------------
+Control Signals: 
+Current State:  1, Next State:  2
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10101100001000110000000000000000
+rs: 00001
+rt: 00011
+rd: 00000
+jta: 00001000110000000000000000
+immediate: 0000000000000000
+opcode: 101011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 11
+Operand 1: 00000000000000000000000000010000, Operand 2: 00000000000000000000000000000000
+ALU Output: 00000000000000000000000000010000
+----------------------------------------
+Register File
+Write-Back Data: 10101100001000110000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00011
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000100
+Cache Data: 00000000000000000000000000000101
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:          14
+PC: 00000000000000000000000000010000
+----------------------------------------
+Control Signals: 
+Current State:  2, Next State:  6
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10101100001000110000000000000000
+rs: 00001
+rt: 00011
+rd: 00000
+jta: 00001000110000000000000000
+immediate: 0000000000000000
+opcode: 101011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 1
+ALUSrcY = 10
+Operand 1: 00000000000000000000000000000010, Operand 2: 00000000000000000000000000000000
+ALU Output: 00000000000000000000000000000010
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00011
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000100
+Cache Data: 00000000000000000000000000000111
+Cache Data @ 1000010: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Clock Cycle:          15
+PC: 00000000000000000000000000010000
+----------------------------------------
+Control Signals: 
+Current State:  6, Next State:  0
+Inst_data = 1
+MemRead = 0
+MemWrite = 1
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10101100001000110000000000000000
+rs: 00001
+rt: 00011
+rd: 00000
+jta: 00001000110000000000000000
+immediate: 0000000000000000
+opcode: 101011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 00
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000010000, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000001000000000000000000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00011
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000010
+Cache Data: 00000000000000000000000000000111
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------
+Clock Cycle:          16
+PC: 00000000000000000000000000010000
+----------------------------------------
+Control Signals: 
+Current State:  0, Next State:  1
+Inst_data = 0
+MemRead = 1
+MemWrite = 0
+IRWrite = 1
+PCSrc = 11
+jumpAddr = 0
+PCWrite = 1
+----------------------------------------
+Instruction: 10101100001000110000000000000000
+rs: 00001
+rt: 00011
+rd: 00000
+jta: 00001000110000000000000000
+immediate: 0000000000000000
+opcode: 101011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000010000, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000000000000000000010100
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00011
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000100
+Cache Data: 00000000000000000000000000000111
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------
+Clock Cycle:          17
+PC: 00000000000000000000000000010100
+----------------------------------------
+Control Signals: 
+Current State:  1, Next State:  2
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10001100001001000000000000000000
+rs: 00001
+rt: 00100
+rd: 00000
+jta: 00001001000000000000000000
+immediate: 0000000000000000
+opcode: 100011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 11
+Operand 1: 00000000000000000000000000010100, Operand 2: 00000000000000000000000000000000
+ALU Output: 00000000000000000000000000010100
+----------------------------------------
+Register File
+Write-Back Data: 10001100001001000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00100
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000101
+Cache Data: 00000000000000000000000000000111
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------
+Clock Cycle:          18
+PC: 00000000000000000000000000010100
+----------------------------------------
+Control Signals: 
+Current State:  2, Next State:  3
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10001100001001000000000000000000
+rs: 00001
+rt: 00100
+rd: 00000
+jta: 00001001000000000000000000
+immediate: 0000000000000000
+opcode: 100011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 1
+ALUSrcY = 10
+Operand 1: 00000000000000000000000000000010, Operand 2: 00000000000000000000000000000000
+ALU Output: 00000000000000000000000000000010
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00100
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000101
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------
+Clock Cycle:          19
+PC: 00000000000000000000000000010100
+----------------------------------------
+Control Signals: 
+Current State:  3, Next State:  4
+Inst_data = 1
+MemRead = 1
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10001100001001000000000000000000
+rs: 00001
+rt: 00100
+rd: 00000
+jta: 00001001000000000000000000
+immediate: 0000000000000000
+opcode: 100011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 00
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000010100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000001000000000000000000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00100
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000010
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------
+Clock Cycle:          20
+PC: 00000000000000000000000000010100
+----------------------------------------
+Control Signals: 
+Current State:  4, Next State:  0
+Inst_data = 0
+MemRead = 0
+MemWrite = 0
+IRWrite = 0
+PCSrc = 00
+jumpAddr = 0
+PCWrite = 0
+----------------------------------------
+Instruction: 10001100001001000000000000000000
+rs: 00001
+rt: 00100
+rd: 00000
+jta: 00001001000000000000000000
+immediate: 0000000000000000
+opcode: 100011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 00
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000010100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000001000000000000000000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000111
+RegWrite = 1
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00100
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000101
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------
+Clock Cycle:          21
+PC: 00000000000000000000000000010100
+----------------------------------------
+Control Signals: 
+Current State:  0, Next State:  1
+Inst_data = 0
+MemRead = 1
+MemWrite = 0
+IRWrite = 1
+PCSrc = 11
+jumpAddr = 0
+PCWrite = 1
+----------------------------------------
+Instruction: 10001100001001000000000000000000
+rs: 00001
+rt: 00100
+rd: 00000
+jta: 00001001000000000000000000
+immediate: 0000000000000000
+opcode: 100011
+fnclass: 000000
+----------------------------------------
+ALU:
+Add_Sub = 0
+LogicFn = 00
+FnType = 10
+ALUSrcX = 0
+ALUSrcY = 00
+Operand 1: 00000000000000000000000000010100, Operand 2: 00000000000000000000000000000100
+ALU Output: 00000000000000000000000000011000
+----------------------------------------
+Register File
+Write-Back Data: 00000000000000000000000000000000
+RegWrite = 0
+RegDst = 00
+RegInSrc = 0
+RegDstAddr: 00100
+REG 1: 00000000000000000000000000000010
+REG 2: 00000000000000000000000000000101
+REG 3: 00000000000000000000000000000111
+REG 4: 00000000000000000000000000000111
+----------------------------------------
+Data Cache
+Cache Address: 00000000000000000000000000000101
+Cache Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Cache Data @ 1000010: 00000000000000000000000000000111
+----------------------------------------

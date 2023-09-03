@@ -1,0 +1,6 @@
+
+--> To compile using Icarus Verilog Compiler
+> iverilog -o multiCycleDatapath_tb multiCycleDatapath_tb.v multiCycleDatapath.v alunbit.v subAdder.v lookAheadCarryAdder.v logicBlock.v barrelShifter.v mux8x1.v registerFile.v dataCache.v controlSection.v
+
+--> for simulation
+vvp multiCycleDatapath_tb
